@@ -1,0 +1,146 @@
+:root {
+    --primary-color: #87B09A;
+    --secondary-color: #ff671b;
+    --font-size: 11pt;
+    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --image-size: 8em;
+}
+
+html {
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: var(--font-size);
+    line-height: 1.5;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding-top: 2em;
+    margin: 1em;
+    margin-bottom: 4em;
+}
+
+a {
+    color: var(--primary-color);
+}
+
+.main-container {
+    max-width: 650px;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: .1em;
+    line-height: 1;
+    color: var(--secondary-color);
+}
+
+h2 {
+    margin: 0;
+    margin-top: 1em;
+    font-size: 1.1em;
+    font-style: italic;
+    font-weight: 300;
+    color: var(--secondary-color);
+}
+
+p {
+    margin: 0;
+    text-align: justify;
+}
+
+@media (max-width: 500px) {
+    p {
+        text-align: left;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--primary-color);
+    margin-bottom: -1em;
+}
+
+.header>div>span {
+    font-size: .95em;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1em;
+}
+
+.header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.img-container {
+    width: var(--image-size);
+    height: var(--image-size);
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 0;
+    flex: 0 0 auto;
+}
+
+img {
+    width: var(--image-size);
+    height: var(--image-size);
+    transform: scale(1.15);
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 1em;
+}
+
+.timeline>div {
+    display: flex;
+    align-items: baseline;
+}
+
+.timeline>div>span {
+    font-size: .9em;
+    width: 7em;
+    flex: 0 0 auto;
+}
+
+.timeline h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: normal;
+    color: var(--primary-color);
+}
+
+.timeline ul {
+    margin: 0;
+    padding-left: 1.5em;
+}
+
+.timeline li {
+    list-style-type: disclosure-open;
+}
+
+li::marker {
+    color: var(--secondary-color);
+}
+
+.skills {
+    margin: 0;
+    padding-left: 0em;
+}
+
+.skills li {
+    list-style-type: none;
+    margin: 0;
+}
+
+.skills strong {
+    color: var(--primary-color);
+    font-weight: 500;
+}
