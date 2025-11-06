@@ -66,6 +66,10 @@ p {
     margin-bottom: -1em;
 }
 
+.header>div {
+    margin: 1em 0;
+}
+
 .header>div>span {
     font-size: .95em;
     display: flex;
