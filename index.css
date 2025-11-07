@@ -52,12 +52,6 @@ p {
     text-align: justify;
 }
 
-@media (max-width: 500px) {
-    p {
-        text-align: left;
-    }
-}
-
 .header {
     display: flex;
     justify-content: space-around;
@@ -149,4 +143,18 @@ li::marker {
 .skills strong {
     color: var(--primary-color);
     font-weight: 500;
+}
+
+@media (max-width: 600px) {
+    p {
+        text-align: left;
+    }
+
+    .timeline>div {
+        flex-direction: column;
+    }
+
+    .timeline>div>div {
+        padding-left: 2em;
+    }
 }
